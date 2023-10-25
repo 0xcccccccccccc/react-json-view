@@ -118,6 +118,7 @@ class VariableEditor extends React.PureComponent {
                                   } else if (onSelect !== false) {
                                       location.shift();
                                       onSelect({
+                                          ...e,
                                           ...variable,
                                           namespace: location
                                       });
