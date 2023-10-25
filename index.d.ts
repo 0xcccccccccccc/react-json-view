@@ -216,7 +216,7 @@ export interface InteractionProps {
   new_value?: object | string | number | boolean | null;
 }
 
-export interface OnSelectProps {
+export interface OnSelectProps extends React.ButtonHTMLAttributes<HTMLButtonElement>["onClick"] {
   /**
    * The name of the currently selected entry.
    */
